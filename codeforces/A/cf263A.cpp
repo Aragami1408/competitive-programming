@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
-
-
+#include <iostream>
+#include <algorithm>
 #define ll long long
 #define MAX 100
 
