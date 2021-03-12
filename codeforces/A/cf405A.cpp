@@ -1,16 +1,15 @@
 #include <iostream>
+#include <algorithm>
 
-#define ll long long 
 
 int main() {
-    ll n, a[n];
+    int x;
+    std::cin >> x;
+    int arr[x-1];
 
-    std::cin >> n;
-
-    for (int i = 0; i < n; i++) {
-        std::cin >> a[i];
-    }
-
+    for (int i = 0; i < x;i++) std::cin >> arr[i];
+    std::sort(arr,arr+x);
+    for (int i = 0;i<x;i++) std::cout << arr[i] << " ";
 
     return 0;
 }
