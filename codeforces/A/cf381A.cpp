@@ -1,17 +1,18 @@
 #include <iostream>
-#define ll long long
+#include <deque>
+#define ll long long int
 int main() {
-    ll n, a[n],s=0,d=0,iter=0;
+    ll n,s=0,d=0;
+    std::deque<ll> a;
     std::cin >> n;
-    for (int i = 0; i <= n; i++) {
-        std::cin >> a[i];
-    }
+    
+    for (int val, i=0;(std::cin>>val)&&i<n;i++) a.push_back(val);
 
-    while (iter <= n-iter) {
-        s += (a[iter] > a[n-(iter+1)]) ? a[iter] : a[n-(iter+1)];
-        iter++;
-        d += (a[iter] > a[n-(iter+1)]) ? a[iter] : a[n-(iter+1)];
-        iter++;
+    while (!a.empty()) {
+        s += std::max(a.front(),a.back());
+        (a.front() > a.back())? a.pop_front() : a.pop_back();
+        d += std::max(a.front(),a.back());         
+        (a.front() > a.back())? a.pop_front() : a.pop_back();
     }
 
     std::cout << s << d << std::endl;

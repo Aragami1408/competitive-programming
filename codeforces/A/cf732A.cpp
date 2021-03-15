@@ -4,11 +4,11 @@
 
 int main() {
 
-    ll k,r,out;
+    ll k,r;
     std::cin >> k >> r;
 
+    while () {
 
-
-    std::cout << out << std::endl;
+    }
     return 0;
 }
