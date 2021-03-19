@@ -1,5 +1,6 @@
 #include <iostream>
 #include <deque>
+#include <vector>
 #define ll long long int
 int main() {
     ll n,s=0,d=0;
