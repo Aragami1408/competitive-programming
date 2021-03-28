@@ -1,9 +1,12 @@
 # Competitive Programming Solutions
-Site implemented:
-- [Codeforces](https://codeforces.com/)
-- [Codewars](https://codewars.com)
-- [HackerRank](https://hackerrank.com)
+This repo contains my solutions for competitive programming.
 
-Mostly my solutions are not well programmed because of long latency (I'm using Python). This repo basically just for personal use.
+There are some sites implemented:
+- Codeforces
+- Codewars
+- HackerRank
 
-This repo is under [Do What The Fuck You Want To Public License](LICENSE).
+Most of them use C++ and Python. I don't think these are optimal solutions, just for personal use.
+
+This repo is under [Do What The Fuck You Want To Public License](LICENSE)
+
